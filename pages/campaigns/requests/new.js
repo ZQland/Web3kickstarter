@@ -9,7 +9,9 @@ class RequestNew extends Component {
     state = {
         value: '',
         description: '',
-        recipient: ''
+        recipient: '',
+        loading: false,
+        errorMessage: ''
     }
 
 
@@ -19,12 +21,38 @@ class RequestNew extends Component {
         return { address };
     }
 
+    onSubmit = async event => {
+        event.preventDefault();
+
+
+        const campaign = Campaign(this.props.address);
+        this.setState({ loading: true, errorMessage: '' });
+
+        const { description, value, recipient } = this.state;
+
+        try {
+            const accounts = await web3.eth.getAccounts();
+            await campaign.methods
+                .createRequest(description, web3.utils.toWei(value, 'ether'), recipient)
+                .send( { from: accounts[0] });
+
+            Router.pushRoute(`/campaigns/${this.props.address}/requests`);
+        } catch (err) {
+            this.setState({errorMessage: err.message});
+        }
+        this.setState({loading: false});
+    }
 
     render() {
         return (
             <Layout>
+                <Link route={`/campaigns/${this.props.address}/requests`}>
+                    <a>
+                        Back
+                    </a>
+                </Link>
                 <h3>Create a Request</h3>
-                <Form>
+                <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
                     <div class="field">
                         <label>
                             Description
@@ -56,7 +84,14 @@ class RequestNew extends Component {
                         />
 
                     </div>
-                    <Button primary>Create Request!</Button>
+                    <div class="ui error message">
+                        <i class="close icon"></i>
+                        <div class="header">
+                            Oops!
+                        </div>
+                        <p>{this.state.errorMessage}</p>
+                    </div>
+                    <Button primary loading={this.state.loading}>Create Request!</Button>
                 </Form>
             </Layout>
         );
