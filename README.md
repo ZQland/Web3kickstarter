@@ -20,6 +20,10 @@ Ganache: a personal blockchain for local development and testing.
 ## Getting Started
 Prerequisites
 * Node.js (version 12 or higher)
+* Solidity (solc 0.8.9 or higher)
+* Next.js (12.3.4)
+* React (18 or higher)
+* web3.js (1.7.4 or higher)
 * Ganache (for local development and testing)
 * MetaMask (for interacting with the application in a browser)
 ## Installation
