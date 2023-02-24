@@ -1,7 +1,7 @@
 # Decentralized Kickstarter
 Decentralized Kickstarter is a web application that allows users to create crowdfunding campaigns and raise funds in a decentralized and transparent way. The application is built on top of the Ethereum blockchain using Solidity smart contracts for the crowdfunding logic and Next.js and React for the front-end.
 
-Features
+## Features
 Create and manage crowdfunding campaigns with a customizable funding goal and deadline
 Accept contributions in Ether from any Ethereum wallet
 Display campaign details and progress, including the total amount raised and the number of contributors
