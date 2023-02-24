@@ -18,19 +18,19 @@ Web3.js: a JavaScript library for interacting with the Ethereum blockchain.
 
 Ganache: a personal blockchain for local development and testing. 
 ## Getting Started
-Prerequisites
-Node.js (version 12 or higher)
-Ganache (for local development and testing)
-MetaMask (for interacting with the application in a browser)
+Prerequisites\
+* Node.js (version 12 or higher)
+* Ganache (for local development and testing)
+* MetaMask (for interacting with the application in a browser)
 ## Installation
-Clone the repository
-Install dependencies: cd Web3kickstarter && npm install
+* Clone the repository
+* Install dependencies: cd Web3kickstarter && npm install
 ## Usage
-import your MetaMask mnemonic phrases and your infura endpoint
-Deploy the smart contract to the infura test network blockchain(Goerli recommended): node deploy.js
-Start the Next.js development server: npm run dev
-Open MetaMask and connect to the Goerli blockchain network
-Navigate to http://localhost:3000 in your browser to use the application
+1. import your MetaMask mnemonic phrases and your infura endpoint
+2. Deploy the smart contract to the infura test network blockchain(Goerli recommended): node deploy.js
+3. Start the Next.js development server: npm run dev
+4. Open MetaMask and connect to the Goerli blockchain network
+5. Navigate to http://localhost:3000 in your browser to use the application
 ## Testing
 Run the test suite: npm run test
 
