@@ -8,28 +8,27 @@ Display campaign details and progress, including the total amount raised and the
 Withdraw funds once the campaign reaches its funding goal
 Refund contributions if the campaign does not reach its funding goal by the deadline
 View a list of all campaigns and search for campaigns by keyword
-Technologies Used
+## Technologies Used
 Next.js: a React framework for server-side rendering and static site generation
 Solidity: a programming language for writing smart contracts on the Ethereum blockchain
 Truffle: a development framework for building and testing Ethereum applications
 Web3.js: a JavaScript library for interacting with the Ethereum blockchain
 Ganache: a personal blockchain for local development and testing
-Getting Started
+## Getting Started
 Prerequisites
 Node.js (version 12 or higher)
 Ganache (for local development and testing)
 MetaMask (for interacting with the application in a browser)
-Installation
-Clone the repository: git clone https://github.com/yourusername/decentralized-kickstarter.git
+## Installation
+Clone the repository
 Install dependencies: cd decentralized-kickstarter && npm install
-Usage
-Start Ganache and import one of the provided private keys
-Deploy the smart contract to the local blockchain: truffle migrate --reset
+## Usage
+import your MetaMask mnemonic phrases and your infura endpoint
+Deploy the smart contract to the infura test network blockchain(Goerli recommended): node deploy.js
 Start the Next.js development server: npm run dev
 Open MetaMask and connect to the local blockchain network
 Navigate to http://localhost:3000 in your browser to use the application
-Testing
-Start Ganache and import one of the provided private keys
-Run the test suite: npm test
-License
+## Testing
+Run the test suite: npm run test
+## License
 This project is licensed under the MIT License. See the LICENSE.md file for details.
