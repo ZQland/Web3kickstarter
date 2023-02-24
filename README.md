@@ -8,10 +8,14 @@ Decentralized Kickstarter is a web application that allows users to create crowd
 * Withdraw funds once the campaign request has been approved by majority of the contributors
 * View a list of all campaigns and its requests
 ## Technologies Used
-Next.js: a React framework for server-side rendering and static site generation. \\
+Next.js: a React framework for server-side rendering and static site generation. \
+
 Solidity: a programming language for writing smart contracts on the Ethereum blockchain. \
+
 Truffle: a development framework for building and testing Ethereum applications. \
+
 Web3.js: a JavaScript library for interacting with the Ethereum blockchain. \
+
 Ganache: a personal blockchain for local development and testing. 
 ## Getting Started
 Prerequisites
