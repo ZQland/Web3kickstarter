@@ -18,7 +18,7 @@ Web3.js: a JavaScript library for interacting with the Ethereum blockchain.
 
 Ganache: a personal blockchain for local development and testing. 
 ## Getting Started
-Prerequisites\
+Prerequisites
 * Node.js (version 12 or higher)
 * Ganache (for local development and testing)
 * MetaMask (for interacting with the application in a browser)
